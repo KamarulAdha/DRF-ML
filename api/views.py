@@ -56,7 +56,7 @@ def predict_diabetictype(request):
                 'Error': '0',
                 'Message': 'Successfully Rendered',
                 'Prediction': prediction,
-                'Confidence Score': f'{conf_score}'
+                'Confidence Score': f'{conf_score}%'
             }
         else:
             predictions = {
