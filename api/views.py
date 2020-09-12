@@ -54,7 +54,7 @@ def predict_diabetictype(request):
             conf_score =  np.max(classifier.predict_proba([result]))*100
             predictions = {
                 'Error': '0',
-                'Message': 'Succesfully Rendered',
+                'Message': 'Successfully Rendered',
                 'Prediction': prediction,
                 'Confidence Score': f'{conf_score}'
             }
